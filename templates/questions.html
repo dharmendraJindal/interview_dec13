@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Questions</title>
+</head>
+<body>
+    <p>Result from previous question:  {{ result }}</p>
+
+    <form method="post" action="/">
+        <label>{{ question }}</label>
+        <br>
+        <input type="text" name="answer" required>
+        <input type="hidden" name="question" value="{{ next_question }}">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
